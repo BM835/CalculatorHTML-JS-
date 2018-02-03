@@ -1,0 +1,66 @@
+<html>
+<head>
+<script>
+//function vvod() {
+
+var first = prompt("Input first number");
+var znak = prompt("Enter the math badge(/, *, + or -)");
+var second = prompt("Input second number");
+switch (znak) {
+  case "+": 
+     plus();
+     break;
+  case "-": 
+     minus();
+     break;
+	   case "*": 
+     mnoj();
+     break;
+  case "/": 
+    del();
+     break;
+  default: 
+     vvod();
+}
+
+function plus() {
+result = first + second;
+document.write(first); //znak second "=" result)
+document.write(znak);
+document.write(second);
+document.write("=");
+document.write(result);
+}
+function minus() {
+result = first-second;
+document.write(first); //znak second "=" result)
+document.write(znak);
+document.write(second);
+document.write("=");
+document.write(result);
+}
+function mnoj() {
+result = first*second;
+document.write(first); //znak second "=" result)
+document.write(znak);
+document.write(second);
+document.write("=");
+document.write(result);
+}
+function del() {
+if (second=0) {
+   alert("Делить на 0 нельзя");
+   //vvod()
+}
+result = first/second;
+document.write(first); //znak second "=" result)
+document.write(znak);
+document.write(second);
+document.write("=");
+document.write(result);
+}
+</script>
+</head>
+<body>
+</body>
+</html>
