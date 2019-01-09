@@ -3,9 +3,15 @@
 <script>
 //function vvod() {
 
-var first = prompt("Input first number");
+var first = parceInt(prompt("Input first number"));
 var znak = prompt("Enter the math badge(/, *, + or -)");
-var second = prompt("Input second number");
+var second = parceInt(prompt("Input second number"));
+
+if (isNaN(first)==true) a=0;
+
+if (isNaN(second)==true) b=0;
+
+
 switch (znak) {
   case "+": 
      plus();
@@ -20,7 +26,7 @@ switch (znak) {
     del();
      break;
   default: 
-     vvod();
+     alert("Plz reboot page and retry");
 }
 
 function plus() {
