@@ -3,15 +3,16 @@
 <script>
 //function vvod() {
 
+//asking for numbers and badge
 var first = parseInt(prompt("Input first number"));
 var znak = prompt("Enter the math badge(/, *, + or -)");
 var second = parseInt(prompt("Input second number"));
-
+//check is numbers realy numbers
+//if number not number - number = 0
 if (isNaN(first)==true) first=0;
-
 if (isNaN(second)==true) second=0;
 
-
+//look, what badge inputed
 switch (znak) {
   case "+": 
      plus();
@@ -26,9 +27,11 @@ switch (znak) {
     del();
      break;
   default: 
-     alert("Plz reboot page and retry");
+  //if badge not badge - reboot page
+     alert("Plz retry");
+     location.reload();
 }
-
+//count and output
 function plus() {
 result = first + second;
 document.write(first); //znak second "=" result)
@@ -66,6 +69,11 @@ document.write("=");
 document.write(result);
 }
 </script>
+<style>
+	body{
+		font-size: 100px;
+	}
+</style>
 </head>
 <body>
 </body>
