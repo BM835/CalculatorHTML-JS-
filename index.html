@@ -27,9 +27,16 @@ switch (znak) {
     del();
      break;
   default: 
-  //if badge not badge - reboot page
-     alert("Plz retry");
-     location.reload();
+  //if badge not badge - ask for retry page
+     var isRetry = confirm("An error... Retry?");
+     if(isRetry == 1){
+     	//reload page for retry
+        location.reload();
+    }else{
+       console.log("Badge error");
+       //go back
+       history.back();
+    }
 }
 //count and output
 function plus() {
