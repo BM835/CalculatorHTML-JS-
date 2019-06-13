@@ -1,2 +1,4 @@
 # JS Calculator
-Jast a calculator with no interfase
+Just a calculator with no interfase
+
+[Try It](https://bm835.space/CalculatorHTML-JS-/)
